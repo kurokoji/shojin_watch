@@ -1,0 +1,33 @@
+doctype 5
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(type='text/css', rel='stylesheet', href='/css/bootstrap.min.css')
+    link(type='text/css', rel='stylesheet', href='/css/style.css')
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(type='text/javascript', src='/js/bootstrap.min.js')
+    title #{title}
+  body
+    header
+      nav(class='navbar navbar-dark bg-primary navbar-expand-lg')
+        div(class='container')
+          button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupport", aria-controls="navbarSupport", aria-expanded="false", aria-label="Toggle navigation")
+            span(class='navbar-toggler-icon')
+
+          a(class='navbar-brand', href='/') 精進ヲチ
+
+          div(class='collapse navbar-collapse', id='navbarSupport')
+            ul(class='navbar-nav mr-auto')
+              li(class='nav-item dropdown')
+                a(class='nav-link dropdown-toggle', id='navbarDropdownMenuLink', href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 問題
+                div(class='dropdown-menu', labelledby='navbarDropdownMenuLink')
+                  a(class='dropdown-item', href='#') AOJ
+                  a(class='dropdown-item', href='#') AtCoder
+              li(class='nav-item')
+                a(class='nav-link', href='/ranking') ACランキング
+            form(class='form-inline my-2 my-lg-0', method='post', action='/search')
+              input(class='form-control mr-sm-2', type='search', placeholder='team name', aria-label='Search', name='teamName')
+              button(class='btn btn-outline-success my-2 my-sm-0', type='submit') 検索
+    block body
