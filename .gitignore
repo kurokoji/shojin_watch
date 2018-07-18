@@ -1,6 +1,7 @@
 # Dlang {{{
 .dub
 docs.json
+dub.selections.json
 __dummy.html
 docs/
 shojin_watch.so
@@ -9,6 +10,7 @@ shojin_watch.dll
 shojin_watch.a
 shojin_watch.lib
 shojin_watch-test-*
+shojin_watch
 *.exe
 *.o
 *.obj
