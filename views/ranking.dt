@@ -1,0 +1,24 @@
+extends layout
+
+block body
+  div(class='container')
+    table(class='table')
+      thead
+        tr
+          th(scope='col') 順位
+          th(scope='col') 名前
+          th(scope='col') AtCoder
+          th(scope='col') AOJ
+          th(scope='col') All
+      - if (hasTeam)
+        - foreach (i, e; users)
+          thead
+            tr
+              th(scope='row') #{i + 1}
+              td #{e.name}
+              td #{e.atcoderInfo.acCount}
+              td #{e.aojInfo.acCount}
+              td 
+                b #{e.getScore}
+      - else
+          

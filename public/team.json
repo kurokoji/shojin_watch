@@ -1,0 +1,9 @@
+{
+    "ict": {
+        "kurokoji" : {"aoj": "kurokoji", "atcoder": "kurokoji"},
+        "Luzhiled" : {"aoj": "Luzhiled", "atcoder": "Luzhiled"},
+        "ringoh72" : {"aoj": "ringoh72", "atcoder": "ringoh72"},
+        "orisano" : {"aoj": "orisano", "atcoder": "orisano"},
+        "mitohato": {"aoj": "mito", "atcoder": "mitohato"}
+    }
+}

@@ -1,0 +1,14 @@
+extends layout
+
+block body
+  div(class='container')
+    table(class='table')
+      thead
+        tr
+          th(scope='col') チーム名
+          th(scope='col') ユーザ数
+      - foreach (name, value; teamJson.byKeyValue)
+        thead
+          tr
+            td #{name}
+            td #{value.length}

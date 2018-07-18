@@ -1,0 +1,42 @@
+extends layout
+
+block body
+  div(class='jumbotron special')
+    div(class='container')
+      div(class='row')
+        div(class='col-12 text-center')
+          div(class='card border-primary bg-transparent')
+            div(class='card-body')
+              h1 精進で差をつけろ(RedCoder)
+  div(class='container')
+    div(class='row')
+      div(class='col-6')
+        h4(class='card-header') AOJ TOP100
+        div(class='card-body')
+          table(class='table')
+            thead
+              tr
+                th(scope='col') 順位
+                th(scope='col') 名前
+                th(scope='col') AC数
+            - foreach (i, e; aojUsers)
+              thead
+                tr
+                  th(scope='row') #{i + 1}
+                  td #{e.id}
+                  td #{e.acCount}
+      div(class='col-6')
+        h4(class='card-header') AtCoder TOP100
+        div(class='card-body')
+          table(class='table')
+            thead
+              tr
+                th(scope='col') 順位
+                th(scope='col') 名前
+                th(scope='col') AC数
+            - foreach (i, e; atcoderUsers)
+              thead
+                tr
+                  th(scope='row') #{i + 1}
+                  td #{e.id}
+                  td #{e.acCount}

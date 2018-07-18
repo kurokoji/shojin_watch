@@ -1,0 +1,12 @@
+{
+	"name": "shojin_watch",
+	"authors": [
+		"Shu Kakihana"
+	],
+	"dependencies": {
+		"vibe-d": "~>0.8.2"
+	},
+	"description": "shojin_watch",
+	"copyright": "Copyright © 2018, Shu Kakihana",
+	"license": "MIT"
+}
